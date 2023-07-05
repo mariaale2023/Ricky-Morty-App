@@ -1,9 +1,11 @@
 .logo {
-  margin-top: 4rem;
+  /* margin-top: 1rem; */
   width: 55%;
 }
 
 .title-page {
   /* font-family: "Dokdo", cursive; */
   font-family: "Walter Turncoat", cursive;
+  margin: 0 auto;
+  font-size: 3rem;
 }

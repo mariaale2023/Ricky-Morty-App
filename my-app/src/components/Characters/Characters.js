@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ListCharacters from "./ListCharacters";
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
@@ -11,7 +12,7 @@ const Characters = () => {
         throw new Error("Request failed");
       }
       const data = await response.json();
-      console.log(data.results); // Process the data as per your requirements
+      console.log(data); // Process the data as per your requirements
       setCharacters(data.results);
     } catch (error) {
       console.log(error);
@@ -22,7 +23,13 @@ const Characters = () => {
     fetchCharacters(inicialUrl);
   }, []);
 
-  return <></>;
+  return (
+    <>
+      <div className="container">
+        <ListCharacters characters={characters} />
+      </div>
+    </>
+  );
 };
 
 export default Characters;
