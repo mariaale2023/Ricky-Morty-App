@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Characters = () => {
-  const fetchData = async () => {
+  const [characters, setCharacters] = useState([]);
+  const inicialUrl = "https://rickandmortyapi.com/api/character";
+
+  const fetchCharacters = async (url) => {
     try {
-      const response = await fetch("https://rickandmortyapi.com/api/character");
+      const response = await fetch(url);
       if (!response.ok) {
         throw new Error("Request failed");
       }
       const data = await response.json();
       console.log(data.results); // Process the data as per your requirements
+      setCharacters(data.results);
     } catch (error) {
       console.log(error);
     }
   };
 
-  fetchData();
+  useEffect(() => {
+    fetchCharacters(inicialUrl);
+  }, []);
 
   return <></>;
 };
