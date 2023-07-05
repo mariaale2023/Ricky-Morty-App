@@ -1,23 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Logo from "../images/tt.png";
+import "./Home.css";
+// import { Link } from "react-router-dom";
 
-function Home({ characters, isLoading }) {
+const Home = () => {
+  // const api = "https://rickandmortyapi.com/api/character";
   return (
-    <div>
-      <h1>Rick and Morty Wikipedia</h1>
-      {isLoading ? (
-        <p>Loading...</p>
-      ) : (
-        <ul>
-          {characters.map((character) => (
-            <li key={character.id}>
-              <Link to={`/character/${character.id}`}>{character.name}</Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <>
+      <div className="container">
+        <a className="logo-box" href="/">
+          <img className="logo" src={Logo} alt="logo" />
+        </a>
+        <h1 className="title-page">Wikipedia</h1>
+        <div className="list-card"></div>
+      </div>
+    </>
   );
-}
+};
 
 export default Home;
