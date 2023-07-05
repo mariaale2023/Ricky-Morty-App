@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ListCharacters from "./ListCharacters";
+import "./Characters.css";
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
@@ -25,7 +26,7 @@ const Characters = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container mt-5 list-characters">
         <ListCharacters characters={characters} />
       </div>
     </>

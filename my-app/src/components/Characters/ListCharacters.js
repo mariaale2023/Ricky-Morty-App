@@ -1,32 +1,30 @@
 // import { Card, Button } from "react-bootstrap";
 import "./ListCharacters.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const ListCharters = ({ characters }) => {
   return (
     <div className="row">
-      <div className="col">
-        {characters.map((character, index) => (
-          <div key={index} className="col">
-            <div className="card">
-              <img src={character.image} alt={character.name} />
-              <h2>{character.name}</h2>
-              <p>{character.status}</p>
-              <p>{character.species}</p>
+      {characters.map((character, index) => (
+        <div key={index} className="col mb-4">
+          <div className="card" style={{ minwidth: "20rem" }}>
+            <img
+              src={character.image}
+              className="card-img-top"
+              alt={character.name}
+            />
+            <div className="card-body">
+              <h5 className="card-title">{character.name}</h5>
+              <p className="card-text">{character.status}</p>
+              <p className="card-text">{character.species}</p>
+              <p className="card-text">{character.location.name}</p>
+              <a href="/" className="btn btn-primary">
+                Go somewhere
+              </a>
             </div>
           </div>
-
-          // <Card>
-          //   <Card.Img variant="top" src={character.image} />
-          //   <Card.Body>
-          //     <Card.Title>{character.name}</Card.Title>
-          //     <Card.Text>Status: {character.status}</Card.Text>
-          //     <Card.Text>Species: {character.species}</Card.Text>
-          //     {/* Add more card details as needed */}
-          //     <Button variant="primary">Learn More</Button>
-          //   </Card.Body>
-          // </Card>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };
