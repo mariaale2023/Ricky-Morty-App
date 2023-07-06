@@ -1,7 +1,20 @@
 .card {
   display: flex;
   min-width: 20rem;
-  border-radius: 2rem;
   background-color: #3f3f3f;
   color: #fff;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.location {
+  font-size: 1rem;
+}
+
+.badge {
+  top: 1rem;
+  right: 2rem;
+  font-size: 1.5rem;
 }

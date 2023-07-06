@@ -18,7 +18,7 @@ const Pagination = ({ prev, next, onPrevios, onNext }) => {
               className="page-link btn btn-success"
               onClick={handlePrevios}
             >
-              Previus
+              Previos
             </Button>
           </li>
         ) : null}

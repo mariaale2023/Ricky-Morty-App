@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import ListCharacters from "./ListCharacters";
 import "./Characters.css";
 import Pagination from "../Pagination/Pagination";
+import PageNumber from "../Pagination/PageNumber";
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
   const [info, setInfo] = useState({});
+  const [pageNumber, setPageNumber] = useState(1);
 
-  const inicialUrl = "https://rickandmortyapi.com/api/character";
+  const inicialUrl = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
 
   const fetchCharacters = async (url) => {
     try {
@@ -34,7 +36,7 @@ const Characters = () => {
 
   useEffect(() => {
     fetchCharacters(inicialUrl);
-  }, []);
+  }, [inicialUrl]);
 
   return (
     <>
@@ -47,6 +49,11 @@ const Characters = () => {
         />
         <ListCharacters characters={characters} />
       </div>
+      <PageNumber
+        info={info}
+        pageNumber={pageNumber}
+        setPageNumber={setPageNumber}
+      />
     </>
   );
 };

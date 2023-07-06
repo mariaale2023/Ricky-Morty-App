@@ -1,0 +1,5 @@
+.pagination li a {
+  background-color: #97ce4c;
+  color: #333;
+  gap: 1rem;
+}
