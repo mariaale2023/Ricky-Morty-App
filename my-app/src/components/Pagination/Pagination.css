@@ -1,0 +1,4 @@
+.button-color {
+  background-color: var(--color-4);
+  border: 1rem solid #000;
+}

@@ -7,20 +7,20 @@ const ListCharters = ({ characters }) => {
     <div className="row">
       {characters.map((character, index) => (
         <div key={index} className="col mb-4">
-          <div className="card" style={{ minwidth: "20rem" }}>
+          <div className="card">
             <img
               src={character.image}
               className="card-img-top"
               alt={character.name}
             />
             <div className="card-body">
-              <h5 className="card-title">{character.name}</h5>
+              <h4 className="card-title">{character.name}</h4>
               <p className="card-text">{character.status}</p>
               <p className="card-text">{character.species}</p>
-              <p className="card-text">{character.location.name}</p>
-              <a href="/" className="btn btn-primary">
+              <p className="card-text location">{character.location.name}</p>
+              {/* <a href="/" className="btn btn-primary">
                 Go somewhere
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

@@ -1,4 +1,7 @@
 .card {
-  background-color: #3f3f3f;
+  display: flex;
+  min-width: 20rem;
   border-radius: 2rem;
+  background-color: #3f3f3f;
+  color: #fff;
 }
