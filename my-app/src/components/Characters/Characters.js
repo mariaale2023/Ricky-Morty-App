@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
+
+import Logo from "../../images/tt.png";
+
 import ListCharacters from "./ListCharacters";
 import "./Characters.css";
 import Pagination from "../Pagination/Pagination";
 import PageNumber from "../Pagination/PageNumber";
+import Search from "../Search/Search";
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
@@ -41,6 +45,11 @@ const Characters = () => {
 
   return (
     <>
+      <h1 className="title-page">Wikipedia</h1>
+      <a className="logo-box" href="/">
+        <img className="logo" src={Logo} alt="logo" />
+      </a>
+      <Search />
       <div className="container mt-5 list-characters">
         <Pagination
           prev={info.prev}
