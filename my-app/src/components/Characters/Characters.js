@@ -8,6 +8,7 @@ const Characters = () => {
   const [characters, setCharacters] = useState([]);
   const [info, setInfo] = useState({});
   const [pageNumber, setPageNumber] = useState(1);
+  console.log(pageNumber);
 
   const inicialUrl = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
 
