@@ -1,0 +1,17 @@
+.filter-seccion {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0;
+}
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#dropdownMenuLink {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}

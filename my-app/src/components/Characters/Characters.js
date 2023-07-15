@@ -7,14 +7,18 @@ import "./Characters.css";
 import Pagination from "../Pagination/Pagination";
 import PageNumber from "../Pagination/PageNumber";
 import Search from "../Search/Search";
+import Filter from "../Filter/Filter";
 
 const Characters = () => {
+  const [pageNumber, setPageNumber] = useState(1);
+
+  const [search, setSearch] = useState("");
+  // const [searchByStatus, setSearchByStatus] = useState("");
+
   const [characters, setCharacters] = useState([]);
   const [info, setInfo] = useState({});
-  const [pageNumber, setPageNumber] = useState(1);
-  console.log(pageNumber);
 
-  const inicialUrl = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+  const inicialUrl = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 
   const fetchCharacters = async (url) => {
     try {
@@ -49,7 +53,12 @@ const Characters = () => {
       <a className="logo-box" href="/">
         <img className="logo" src={Logo} alt="logo" />
       </a>
-      <Search />
+      <Search
+        setSearch={setSearch}
+        setPageNumber={setPageNumber}
+        // setSearchByStatus={setSearchByStatus}
+      />
+      <Filter />
       <div className="container mt-5 list-characters">
         <Pagination
           prev={info.prev}
