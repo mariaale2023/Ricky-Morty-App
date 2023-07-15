@@ -34,7 +34,7 @@ const Filter = () => {
             </li>
             <li>
               <a className="dropdown-item" href="/">
-                Unknow
+                Unknown
               </a>
             </li>
           </ul>
@@ -63,7 +63,7 @@ const Filter = () => {
             </li>
             <li>
               <a className="dropdown-item" href="/">
-                Unknow
+                Unknown
               </a>
             </li>
           </ul>
@@ -127,12 +127,7 @@ const Filter = () => {
             </li>
             <li>
               <a className="dropdown-item" href="/">
-                Unknow
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="/">
-                Unknow
+                Unknown
               </a>
             </li>
           </ul>
