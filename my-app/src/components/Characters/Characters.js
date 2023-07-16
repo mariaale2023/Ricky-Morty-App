@@ -14,11 +14,12 @@ const Characters = () => {
 
   const [search, setSearch] = useState("");
   // const [searchByStatus, setSearchByStatus] = useState("");
+  const [status, setStatus] = useState("");
 
   const [characters, setCharacters] = useState([]);
   const [info, setInfo] = useState({});
 
-  const inicialUrl = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
+  const inicialUrl = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&status=${status}`;
 
   const fetchCharacters = async (url) => {
     try {
@@ -58,7 +59,7 @@ const Characters = () => {
         setPageNumber={setPageNumber}
         // setSearchByStatus={setSearchByStatus}
       />
-      <Filter />
+      <Filter setStatus={setStatus} setPageNumber={setPageNumber} />
       <div className="container mt-5 list-characters">
         <Pagination
           prev={info.prev}
