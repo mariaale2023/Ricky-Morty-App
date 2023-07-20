@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home1 = () => {
+  const shopifyURL = "https://ricky-morty-shop.myshopify.com/";
+
   return (
     <>
       <h1 className="title-page">Wikipedia</h1>
@@ -26,8 +28,10 @@ const Home1 = () => {
           </Link>
         </div>
         <div className="home-item">
-          <img className="home-img" alt="family" src={ImgCharacter3} />
-          <h2 className="home-title">Shop</h2>
+          <a href={shopifyURL} rel="noopener noreferrer">
+            <img className="home-img" alt="family" src={ImgCharacter3} />
+            <h2 className="home-title">Shop</h2>
+          </a>
         </div>
       </div>
     </>
