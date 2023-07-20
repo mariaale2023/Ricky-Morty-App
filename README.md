@@ -18,6 +18,11 @@ The Ricky Morty App is a web application that allows users to explore characters
 - Access detailed information about each character.
 - Visit the Ricky Morty shop for merchandise and products.
 
+![Home](/imagen-app/Home.png)
+![Characters Cards](/imagen-app/Characters.png)
+![Filters](/imagen-app/Filters.png)
+![Shop](/imagen-app/Shop.png)
+
 ## Technologies Used
 
 - React.js: A JavaScript library for building user interfaces.
