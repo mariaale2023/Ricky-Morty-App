@@ -39,42 +39,43 @@ git clone https://github.com/your-username/Ricky-morty-app.git
 cd Ricky-morty-app
 ```
 
-2. In your terminal, open folder App
-   `cd my-app`
-   `npm install`
-   `npm start`.
+2.  In your terminal, open folder App
+    `cd my-app`
+    `npm install`
+    `npm start`.
 
-3. Crete a Shop Online in Shopify
-   Check your Node version (you will need app v18 to run Hidrogen)
-   `node -v`
+3.  Crete a Shop Online in Shopify
+    Check your Node version (you will need app v18 to run Hidrogen)
+    `node -v`
 
-   Create and Account in [Shopify](https://www.shopify.com/nz)
-   Create your Store
+    Create and Account in [Shopify](https://www.shopify.com/nz)
 
-4. Install Higrogen. Check documentation on [Higrogen](https://shopify.dev/docs/custom-storefronts/hydrogen/getting-started/quickstart)
-   `cd my-app`
-   `npm create @shopify/hydrogen@latest`
+    Create your Store
 
-   ````? Choose a template
-   Hello World
-   > Demo Store```
-   ````
+4.  Install Higrogen.
+    Check documentation on [Higrogen](https://shopify.dev/docs/custom-storefronts/hydrogen/getting-started/quickstart)
 
-````? Choose a language
- > JavaScript
- > TypeScript```
+        ```cd my-app
+        npm create @shopify/hydrogen@latest
 
- ```Where would you like to create your app?
- > Add a NAME```
+        ? Choose a template
+        Hello World
+        > Demo Store
 
-``` ? Install dependencies with npm?
- > Yes
- > No```
+        ? Choose a language
+        > JavaScript
+        > TypeScript
 
-`cd ricky-morty-shop`
-`npm run dev`
-````
+        Where would you like to create your app?
+        > Add a NAME
 
-5. Update your public API token and Public domain with yours
+        ? Install dependencies with npm?
+        > Yes
+        > No
 
-6. Update the link of the shop online in Home1.js
+        cd ricky-morty-shop
+        npm run dev```
+
+5.  Update your public API token and Public domain with yours
+
+6.  Update the link of the shop online in Home1.js
