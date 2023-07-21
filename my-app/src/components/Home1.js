@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home1 = () => {
-  const shopifyURL = "https://ricky-morty-shop.myshopify.com/";
+  const shopifyURL = "http://localhost:3000/";
 
   return (
     <>
@@ -28,6 +28,10 @@ const Home1 = () => {
           </Link>
         </div>
         <div className="home-item">
+          {/* <Link to={`/shop`}>
+            <img className="home-img" alt="family" src={ImgCharacter3} />
+            <h2 className="home-title">Shop</h2>
+          </Link> */}
           <a href={shopifyURL} rel="noopener noreferrer">
             <img className="home-img" alt="family" src={ImgCharacter3} />
             <h2 className="home-title">Shop</h2>
