@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Characters from "./components/Characters/Characters";
 import Home1 from "./components/Home1";
-// import ShopPage from "./ricky-morty-shop/app/root";
+// import ShopPage from "./components/ricky-morty-shop/app/root";
 
 import "./App.css";
 

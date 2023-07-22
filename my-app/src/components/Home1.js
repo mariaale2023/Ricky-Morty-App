@@ -4,6 +4,7 @@ import ImgCharacter1 from "../images/pxfuel_1.jpg";
 import ImgCharacter2 from "../images/pxfuel_2.jpg";
 import ImgCharacter3 from "../images/pxfuel_5.jpg";
 import { Link } from "react-router-dom";
+
 import "./Home.css";
 
 const Home1 = () => {
