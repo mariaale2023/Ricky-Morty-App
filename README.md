@@ -1,5 +1,8 @@
 # Ricky Morty App
 
+![rick&morty](rick.jpg)
+*image created by dall-e*
+
 The Ricky Morty App is a web application that allows users to explore characters from the popular animated TV show "Rick and Morty". Users can view details about each character, search for specific characters, and access a shop for Ricky Morty merchandise. This App is connected with Ricky and Morty API and Higrogen Shopify framework.
 
 ## Table of Contents
